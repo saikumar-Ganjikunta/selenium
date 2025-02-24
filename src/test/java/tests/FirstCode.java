@@ -1,8 +1,9 @@
-package Day1;
+package tests;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
 
 import dev.failsafe.internal.util.Assert;
 
@@ -21,8 +22,9 @@ import org.openqa.selenium.WebDriver;
 
 
 public class FirstCode {
+	@Test
 
-	public static void main(String[] args) throws InterruptedException {
+	public  void uday() {
 	
 		
 		//ChromeDriver driver = new ChromeDriver();
@@ -34,9 +36,9 @@ public class FirstCode {
 		
 		System.out.println(driver.getTitle());
 		
-		JavascriptExecutor se=(JavascriptExecutor)driver;
-		se.executeScript("Window.scrollBy(0,500)","");
-		
+//		JavascriptExecutor se=(JavascriptExecutor)driver;
+//		se.executeScript("Window.scrollBy(0,500)","");
+//		
 		
 		
 		

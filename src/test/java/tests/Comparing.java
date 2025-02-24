@@ -1,4 +1,4 @@
-package Day1;
+package tests;
 
 import java.time.Duration;
 import java.util.Arrays;
@@ -7,10 +7,12 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.Test;
 
 public class Comparing {
+	@Test
 
-	public static void main(String[] args) throws InterruptedException {
+	public  void sai() {
 		
 		WebDriver driver = new EdgeDriver();
 		driver.manage().window().maximize();
