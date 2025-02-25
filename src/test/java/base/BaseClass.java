@@ -24,10 +24,7 @@ public class BaseClass {
 	
 	}
 	
-	@Test
-	public void sai() {
-		System.out.println("Saikumar");
-	}
+	
 	
 
 }

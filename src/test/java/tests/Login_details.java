@@ -13,17 +13,16 @@ import org.testng.annotations.Test;
 import PageObjectClasses.ATPracticePage;
 import base.BaseClass;
 
-public class Login_details extends BaseClass  {
+public class Login_details  {
 	public   WebDriver driver ;
-
 	
-	
-	
-	
-	
-	
-	@Test
+	@Test(groups="sanity")
 	public void login_credentials() throws InterruptedException  {
+		 driver = new ChromeDriver();
+		  //  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			driver.get("https://testautomationpractice.blogspot.com/");
+			driver.manage().window().maximize();
+		    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
 		
 		ATPracticePage atp=new ATPracticePage(driver);
@@ -43,9 +42,9 @@ public class Login_details extends BaseClass  {
 		WebElement source=driver.findElement(By.xpath("//p[contains(text(),'Drag me to my target')]"));
 		WebElement target=driver.findElement(By.xpath("//div[@id='droppable']"));
 		aa.dragAndDrop(source, target);
-		Thread.sleep(3000);
+		driver.quit();
 		
-		atp.quit();
+	
 		
 		
 		

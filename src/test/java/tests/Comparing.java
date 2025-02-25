@@ -10,7 +10,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Test;
 
 public class Comparing {
-	@Test
+	@Test(groups={"sanity"})
 
 	public  void sai() {
 		
@@ -19,7 +19,7 @@ public class Comparing {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
 		driver.get("https://testautomationpractice.blogspot.com/");
-		driver.findElement(By.xpath("//button[@id='confirmBtn']")).click();
+		driver.findElement(By.xpath("//button[@id=")).click();
 		Alert alt=driver.switchTo().alert();
 		String txt=alt.getText();
 		if(txt.equals("Press a button!")) {

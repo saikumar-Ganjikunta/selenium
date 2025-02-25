@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 public class DropDowns {
-	@Test
+	@Test(groups="sanity")
 	public  void dpdowns(){
 		WebDriver driver = new EdgeDriver();
 		driver.manage().window().maximize();

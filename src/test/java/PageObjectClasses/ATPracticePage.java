@@ -45,9 +45,7 @@ public class ATPracticePage {
 		
 	
 	
-	public void quit() {
-		driver.quit();
-	}
+	
 	
 	
 
