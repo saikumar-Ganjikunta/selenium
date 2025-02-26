@@ -49,7 +49,7 @@ package utilities;
 				reports.setSystemInfo("Machine:", "testpc1");
 				reports.setSystemInfo("OS", "windows 11");
 				reports.setSystemInfo("browser:", "chrome");
-				reports.setSystemInfo("user name:", "Prachi");
+				reports.setSystemInfo("user name:", "G S Kumar");
 				
 				//configuration to change look and feel of report
 				htmlReporter.config().setDocumentTitle("Extent Listener Report Demo");

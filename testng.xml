@@ -8,6 +8,9 @@
 </listeners>
 
   <test name="Test1">
+  <parameter name="browser"  value="chrome"/>
+  
+  
   
   <groups>
   <run>
@@ -17,9 +20,9 @@
   </groups>
    
     <classes>
-      <class name="tests.Login_details"/>
-      <class name="tests.Comparing"/>
+      <class name="tests.Login_details"/>     
       <class name="tests.DropDowns"/>
+      <class name="tests.Comparing"/>
     </classes>
   </test> <!-- Test -->
   

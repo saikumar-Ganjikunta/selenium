@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PageObjectClasses.DropDowns">
+      <class name="tests.Comparing">
         <methods>
-          <include name="dpdowns"/>
+          <include name="sai"/>
         </methods>
-      </class> <!-- PageObjectClasses.DropDowns -->
+      </class> <!-- tests.Comparing -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

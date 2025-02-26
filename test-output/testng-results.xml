@@ -1,92 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-25T13:58:11 IST" name="Suite" finished-at="2025-02-25T13:58:32 IST" duration-ms="21716">
+  <suite started-at="2025-02-26T14:31:11 IST" name="Suite" finished-at="2025-02-26T14:31:32 IST" duration-ms="21080">
     <groups>
       <group name="sanity">
-        <method signature="Comparing.sai()[pri:0, instance:tests.Comparing@2f4948e4]" name="sai" class="tests.Comparing"/>
-        <method signature="DropDowns.dpdowns()[pri:0, instance:tests.DropDowns@1f2586d6]" name="dpdowns" class="tests.DropDowns"/>
-        <method signature="Login_details.login_credentials()[pri:0, instance:tests.Login_details@815b41f]" name="login_credentials" class="tests.Login_details"/>
+        <method signature="Comparing.sai(java.lang.String)[pri:0, instance:tests.Comparing@682b2fa]" name="sai" class="tests.Comparing"/>
+        <method signature="DropDowns.dpdowns()[pri:0, instance:tests.DropDowns@139982de]" name="dpdowns" class="tests.DropDowns"/>
+        <method signature="Login_details.login_credentials()[pri:0, instance:tests.Login_details@6a78afa0]" name="login_credentials" class="tests.Login_details"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2025-02-25T13:58:11 IST" name="Test1" finished-at="2025-02-25T13:58:32 IST" duration-ms="21716">
+    <test started-at="2025-02-26T14:31:11 IST" name="Test1" finished-at="2025-02-26T14:31:32 IST" duration-ms="21080">
       <class name="tests.Comparing">
-        <test-method signature="sai()[pri:0, instance:tests.Comparing@2f4948e4]" started-at="2025-02-25T13:58:17 IST" name="sai" finished-at="2025-02-25T13:58:23 IST" duration-ms="6268" status="FAIL">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
-            <message>
-              <![CDATA[invalid selector: Unable to locate an element with the xpath expression //button[@id= because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//button[@id=' is not a valid XPath expression.
-  (Session info: MicrosoftEdge=133.0.3065.82)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [7ed266b03434fc1b00b6d2f988c76860, findElement {using=xpath, value=//button[@id=}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 133.0.3065.82, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62729}, msedge: {msedgedriverVersion: 133.0.3065.82 (e8aeaf3e0117..., userDataDir: C:\Users\saiku\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62729/devtoo..., se:cdpVersion: 133.0.3065.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7ed266b03434fc1b00b6d2f988c76860]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //button[@id= because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//button[@id=' is not a valid XPath expression.
-  (Session info: MicrosoftEdge=133.0.3065.82)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [7ed266b03434fc1b00b6d2f988c76860, findElement {using=xpath, value=//button[@id=}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 133.0.3065.82, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62729}, msedge: {msedgedriverVersion: 133.0.3065.82 (e8aeaf3e0117..., userDataDir: C:\Users\saiku\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62729/devtoo..., se:cdpVersion: 133.0.3065.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7ed266b03434fc1b00b6d2f988c76860
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at tests.Comparing.sai(Comparing.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1575)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+        <test-method signature="sai(java.lang.String)[pri:0, instance:tests.Comparing@682b2fa]" started-at="2025-02-26T14:31:26 IST" name="sai" finished-at="2025-02-26T14:31:32 IST" duration-ms="6570" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sai -->
       </class> <!-- tests.Comparing -->
       <class name="tests.DropDowns">
-        <test-method signature="dpdowns()[pri:0, instance:tests.DropDowns@1f2586d6]" started-at="2025-02-25T13:58:23 IST" name="dpdowns" finished-at="2025-02-25T13:58:32 IST" duration-ms="8900" status="PASS">
+        <test-method signature="dpdowns()[pri:0, instance:tests.DropDowns@139982de]" started-at="2025-02-26T14:31:20 IST" name="dpdowns" finished-at="2025-02-26T14:31:26 IST" duration-ms="6024" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dpdowns -->
       </class> <!-- tests.DropDowns -->
       <class name="tests.Login_details">
-        <test-method signature="login_credentials()[pri:0, instance:tests.Login_details@815b41f]" started-at="2025-02-25T13:58:11 IST" name="login_credentials" finished-at="2025-02-25T13:58:17 IST" duration-ms="6034" status="PASS">
+        <test-method signature="login_credentials()[pri:0, instance:tests.Login_details@6a78afa0]" started-at="2025-02-26T14:31:12 IST" name="login_credentials" finished-at="2025-02-26T14:31:20 IST" duration-ms="8215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_credentials -->

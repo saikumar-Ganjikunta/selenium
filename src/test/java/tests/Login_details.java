@@ -7,6 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
@@ -18,7 +19,7 @@ public class Login_details  {
 	
 	@Test(groups="sanity")
 	public void login_credentials() throws InterruptedException  {
-		 driver = new ChromeDriver();
+		 driver = new EdgeDriver();
 		  //  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			driver.get("https://testautomationpractice.blogspot.com/");
 			driver.manage().window().maximize();

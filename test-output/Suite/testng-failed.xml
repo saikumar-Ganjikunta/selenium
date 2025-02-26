@@ -5,6 +5,7 @@
     <listener class-name="utilities.ExtentReportManager"/>
   </listeners>
   <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
     <groups>
       <run>
         <include name="sanity"/>
@@ -13,7 +14,7 @@
     <classes>
       <class name="tests.Comparing">
         <methods>
-          <include name="sai"/>
+          <include name="sai" invocation-numbers="0"/>
         </methods>
       </class> <!-- tests.Comparing -->
     </classes>
